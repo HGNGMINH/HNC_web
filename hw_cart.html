@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hw_cart.css">
+    <script src="hw_galery.js"></script>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <li>
+                <a href="hw_home.html"><i class="fa-brands fa-windows"></i> Home</a>
+            </li>
+            <li>
+                <a href="hw_galery.html"><i class="fa-solid fa-image"></i> Galery</a>
+            </li>
+            <li>
+                <a href="hw_cart.html"><i class="fa-solid fa-cart-shopping"></i> Order</a>
+            </li>
+            <li>
+                <a href="hw_galery.html#phone"><i class="fa-solid fa-mobile-screen-button"></i> Phone</a>
+            </li>
+            <li>
+                <a href="hw_galery.html#tablet"><i class="fa-solid fa-tablet-screen-button"></i> Tablet</a>
+            </li>
+            <li>
+                <a href="hw_galery.html#laptop"><i class="fa-solid fa-laptop"></i> Laptop</a>
+            </li> 
+        <input type="text" placeholder="Search" class="search">
+        </header>
+        <nav>
+            <h1>ODER DEATIAILS</h1>
+
+            <form action="hw_home.html">
+                <h2>Customer Information</h2>
+                <fieldset class="customer">
+                    <div><label for="Title">Title: </label>
+                        <select name="Title" id="t">
+                            <option value="Sir">Sir</option>
+                            <option value="Ms">Ms</option>
+                            <option value="other">Rather not say</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="name">Fullname: <input type="text" placeholder="Fullname"></label>
+                    </div>
+                    <div>
+                        <label for="add">Address: <input type="address"></label>
+                    </div>
+                    <div>
+                        <label for="phone">Phone: <input type="phone"></label>
+                    </div>
+                    <div>
+                        <label for="email">Email: <input type="email" required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></label>
+                    </div>
+                </fieldset><br>
+                <h2>Product</h2>
+                <fieldset class="product">
+                    <div><label for="prname">Name: </label><select name="Title" id="t">
+                        <option value="LW">Laptop Window</option>
+                        <option value="MB">Macbook</option>
+                        <option value="SP">Surface Pro</option>
+                    </select>
+                    </div>
+                    <div>
+                        <label for="prcor">Color: 
+                            <select name="Title" id="t">
+                                <option value="black">black</option>
+                                <option value="gold">gold</option>
+                                <option value="gray">gray</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="quant">Quantity: 
+                            <input type="number" required pattern="[1-10]">
+                        </label>
+                    </div>
+                </fieldset><br>
+                <h2>Payment deatail</h2>
+                <fieldset class="payment">
+                    <h3>Credit card</h3>
+                    <fieldset>
+                        <div>
+                            <lable>Visa <input type="checkbox"></lable><br>
+                            <lable>Mastercard<input type="checkbox"></lable><br>
+                            <lable>Discover<input type="checkbox"></lable><br>
+                            <lable>American Express<input type="checkbox"></lable><br>
+                        </div>    
+                    </fieldset><br>
+                    <div>
+                        <label for="CN">Card Number: <input type="number" required pattern="{6,11}"></label>
+                    </div>
+                    <div>
+                        <label for="ED">Expiration Date <input type="date"></label>
+                    </div>
+                    <input type="checkbox" required><label for="acc">I accept the terms and conditions. </label>
+                </fieldset><br>
+                <button>Summit</button>
+                <button>Cancel</button>
+            </form><br>
+        </nav>
+        <footer>
+            <a href="mailto:hgngminh@gmail.com">Copyright <i class="fa-solid fa-copyright"> </i> Hoang Ngoc Minh
+                minh.hn.2068@aptechlearning.edu.vn</a>
+        </footer>
+    </div>
+</body>
+
+</html>
